@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Budget Record</title>
+  <!--
+    ╔══════════════════════════════════════════════════════════╗
+    ║  📄 GitHub Pages Wrapper                                ║
+    ║  ─────────────────────────────────────────────────────  ║
+    ║  ไฟล์นี้ใช้ deploy บน GitHub Pages                       ║
+    ║  เพื่อซ่อนแถบ "Google Apps Script" ด้านบน                ║
+    ║  โดยใช้ iframe ครอบ Web App ของ GAS                      ║
+    ║                                                          ║
+    ║  ⚠️  อย่าสับสนกับ Index.html ของ Apps Script             ║
+    ║      ไฟล์นี้อยู่โฟลเดอร์ github-pages/ เท่านั้น            ║
+    ║                                                          ║
+    ║  🔗 เปลี่ยน URL ใน <iframe src="..."> ให้ตรงกับ           ║
+    ║     ลิงก์ /exec ของ Apps Script deployment ล่าสุด         ║
+    ╚══════════════════════════════════════════════════════════╝
+  -->
   <style>
-    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #f5f3ff; }
-    iframe { border: none; width: 100%; height: 100%; display: block; }
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #f5f3ff;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <!-- อย่าลืมเปลี่ยนลิงก์ตรง src ให้เป็นลิงก์ /exec ของคุณ -->
-  <iframe src="https://script.google.com/macros/s/AKfycbwHbRv19_dvH87WR869lEv0r7XIV10NiOGzV2NRTLQH7s_kH2HWUyjPhUYaqcXBgYwt/exec" allow="fullscreen"></iframe>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbwHbRv19_dvH87WR869lEv0r7XIV10NiOGzV2NRTLQH7s_kH2HWUyjPhUYaqcXBgYwt/exec"
+    allow="fullscreen; camera; geolocation"
+  ></iframe>
 </body>
 </html>
